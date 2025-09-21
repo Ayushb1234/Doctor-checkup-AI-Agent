@@ -64,7 +64,7 @@ uvicorn app.main:app --reload --host 0.0.0.0 --port 8000
 ```
 
 
-#🎨 Frontend Setup (React + Vite)
+# Frontend Setup (React + Vite)
 
 1. Navigate to frontend folder:
 ```
@@ -82,7 +82,7 @@ npm install
 npm run dev
 ```
 
-#⚠️ Notes & Limitations
+# Notes & Limitations
 
 This project is a demo / prototype — not for clinical use without expert review.
 
@@ -104,7 +104,8 @@ Add negation detection (e.g., “no headache” should not extract “headache�
 
 Deploy to cloud (Heroku, Render, or Docker on AWS).
 
-👨‍💻 Author
+# Author
 
 Made with ❤️ using FastAPI + React + NLP.
+
 For educational and prototyping purposes only.
