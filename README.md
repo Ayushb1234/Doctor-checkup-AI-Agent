@@ -11,6 +11,9 @@ Produces structured SOAP notes
 Backend: Python, FastAPI, spaCy, HuggingFace Transformers
 Frontend: React (Vite), Fetch API
 
+FrontEnd FIle -> NLPdoctor Frontend.zip
+BackEnd File -> Nlp
+
 
 1. Project Repositry
 ```
