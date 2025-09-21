@@ -25,7 +25,7 @@ NLPDoctor System/
 │   │   ├── utils_sentiment.py
 │   │   └── utils_soap.py
 │   ├── requirements.txt
-│   └── Dockerfile
+│   
 ├── frontend/
 │   ├── index.html
 │   ├── package.json
@@ -36,7 +36,7 @@ NLPDoctor System/
 │       └── index.css
 ```
 
-⚙️ Backend Setup (FastAPI)
+#⚙️ Backend Setup (FastAPI)
 
 1. Navigate to backend folder:
 ```
@@ -64,7 +64,7 @@ uvicorn app.main:app --reload --host 0.0.0.0 --port 8000
 ```
 
 
-🎨 Frontend Setup (React + Vite)
+#🎨 Frontend Setup (React + Vite)
 
 1. Navigate to frontend folder:
 ```
@@ -82,7 +82,7 @@ npm install
 npm run dev
 ```
 
-⚠️ Notes & Limitations
+#⚠️ Notes & Limitations
 
 This project is a demo / prototype — not for clinical use without expert review.
 
@@ -92,12 +92,16 @@ For better accuracy, swap spaCy small model (en_core_web_sm) with scispaCy / med
 
 HuggingFace models will download on first run — ensure internet access.
 
-🚀 Next Steps
+#🚀 Next Steps
 
 Add user-friendly frontend UI (tabs for Entities, Summary, Sentiment, SOAP Note).
+
 Use nvm-windows for managing Node.js versions.
+
 Fine-tune ClinicalBERT / BioBERT for medical sentiment.
+
 Add negation detection (e.g., “no headache” should not extract “headache”).
+
 Deploy to cloud (Heroku, Render, or Docker on AWS).
 
 👨‍💻 Author
