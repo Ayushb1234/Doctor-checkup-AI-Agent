@@ -36,7 +36,7 @@ NLPDoctor System/
 │       └── index.css
 ```
 
-#⚙️ Backend Setup (FastAPI)
+# Backend Setup (FastAPI)
 
 1. Navigate to backend folder:
 ```
@@ -92,7 +92,7 @@ For better accuracy, swap spaCy small model (en_core_web_sm) with scispaCy / med
 
 HuggingFace models will download on first run — ensure internet access.
 
-#🚀 Next Steps
+# Next Steps
 
 Add user-friendly frontend UI (tabs for Entities, Summary, Sentiment, SOAP Note).
 
