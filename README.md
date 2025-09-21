@@ -85,8 +85,11 @@ npm run dev
 ⚠️ Notes & Limitations
 
 This project is a demo / prototype — not for clinical use without expert review.
+
 Models may hallucinate or miss entities. Always verify.
+
 For better accuracy, swap spaCy small model (en_core_web_sm) with scispaCy / medSpaCy.
+
 HuggingFace models will download on first run — ensure internet access.
 
 🚀 Next Steps
