@@ -38,12 +38,12 @@ NLPDoctor System/
 
 ⚙️ Backend Setup (FastAPI)
 
-Navigate to backend folder:
+1. Navigate to backend folder:
 ```
 cd backend
 ```
 
-Create virtual environment:
+2. Create virtual environment:
 ```
 
 python -m venv venv
@@ -52,37 +52,52 @@ venv\Scripts\activate   # Windows
 source venv/bin/activate   # Mac/Linux
 ```
 
-Install dependencies:
+3. Install dependencies:
 ```
 pip install -r requirements.txt
 python -m spacy download en_core_web_sm
 ```
 
-Run FastAPI server:
+4. Run FastAPI server:
 ```
 uvicorn app.main:app --reload --host 0.0.0.0 --port 8000
+```
 
-```
-Test health check:
-```
-http://localhost:8000/health
-```
 
 🎨 Frontend Setup (React + Vite)
 
-Navigate to frontend folder:
+1. Navigate to frontend folder:
 ```
 
 cd frontend
 ```
 
-Install dependencies:
+2. Install dependencies:
 ```
 npm install
 
 ```
-Start dev server:
+3. Start dev server:
 ```
 npm run dev
 ```
 
+⚠️ Notes & Limitations
+
+This project is a demo / prototype — not for clinical use without expert review.
+Models may hallucinate or miss entities. Always verify.
+For better accuracy, swap spaCy small model (en_core_web_sm) with scispaCy / medSpaCy.
+HuggingFace models will download on first run — ensure internet access.
+
+🚀 Next Steps
+
+Add user-friendly frontend UI (tabs for Entities, Summary, Sentiment, SOAP Note).
+Use nvm-windows for managing Node.js versions.
+Fine-tune ClinicalBERT / BioBERT for medical sentiment.
+Add negation detection (e.g., “no headache” should not extract “headache”).
+Deploy to cloud (Heroku, Render, or Docker on AWS).
+
+👨‍💻 Author
+
+Made with ❤️ using FastAPI + React + NLP.
+For educational and prototyping purposes only.
